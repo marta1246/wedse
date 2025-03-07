@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marta Miquel - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1>Marta Miquel Portfolio</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Content -->
+    <section>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: marta.miquel@example.com</p>
+            <p>LinkedIn: <a href="linkedin.com/in/martavicenmiquel" target="_blank">linkedin.com/in/martamiquel</a></p>
+            <p>GitHub: <a href="miquelmvicens@gmail.com" target="_blank">github.com/martamiquel</a></p>
+
+            <form action="https://formspree.io/f/yourform" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

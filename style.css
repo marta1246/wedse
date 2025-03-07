@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #473e9f;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #030113;
+}
+
+/* Sections */
+section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.homepage-image {
+    width: 350px;
+    border-radius: 20px;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Items */
+.project-item {
+    background: #ffffffe8;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    padding: 25px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #0e0114ea;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgba(22, 1, 3, 0.952);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .homepage-image {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 12px 0;
+    }
+}
